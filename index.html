@@ -2,7 +2,7 @@
 <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.4.1/dist/js/tabulator.min.js"></script>
 <div id="kills_table"></div>
 <script type="text/javascript">
-    var kill_records = [{"id": 1.0, "created_at": "2019-09-12T22:13:38", "shooter_captain_name": "Boris-Barboris", "shooter_captain_type": "player", "shooter_hull_name": "Stork", "dead_captain_name": "BOT Captain", "dead_captain_type": "bot", "dead_hull_name": "Bot trader", "weapon_name": "Minoga", "weapon_travelled": 4182.12}, {"id": 2.0, "created_at": "2019-09-13T16:24:05", "shooter_captain_name": "Boris-Barboris", "shooter_captain_type": "player", "shooter_hull_name": "Stork", "dead_captain_name": "BOT Captain", "dead_captain_type": "bot", "dead_hull_name": "Bot trader", "weapon_name": "Minoga", "weapon_travelled": 3533.96}]
+    var kill_records = [{"id": 1.0, "created_at": "2019-09-12T22:13:38", "shooter_captain_name": "Boris-Barboris", "shooter_captain_type": "player", "shooter_hull_name": "Stork", "dead_captain_name": "BOT Captain", "dead_captain_type": "bot", "dead_hull_name": "Bot trader", "weapon_name": "Minoga", "weapon_travelled": 4182.12}, {"id": 2.0, "created_at": "2019-09-13T16:24:05", "shooter_captain_name": "Boris-Barboris", "shooter_captain_type": "player", "shooter_hull_name": "Stork", "dead_captain_name": "BOT Captain", "dead_captain_type": "bot", "dead_hull_name": "Bot trader", "weapon_name": "Minoga", "weapon_travelled": 3533.96}];
     var table = new Tabulator("#kills_table", {
         data: kill_records,
         layout:"fitColumns",
@@ -18,4 +18,4 @@
         ]
     });
     table.setSort("id", "desc");
- </script>
+</script>
