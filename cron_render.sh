@@ -1,5 +1,5 @@
 #!/bin/bash
-JSON_DATA="$(mysql -B dsubs_prod -e 'select * from kill_records where created_at < UTC_TIMESTAMP - INTERVAL 30 minute;' | csvjson)"
+JSON_DATA="$(mysql -B dsubs_prod -e 'select * from kill_records where created_at < UTC_TIMESTAMP - INTERVAL 30 minute order by id desc limit 250;' | csvjson)"
 echo -n '<link href="https://unpkg.com/tabulator-tables@4.4.1/dist/css/tabulator.min.css" rel="stylesheet">
 <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.4.1/dist/js/tabulator.min.js"></script>
 <div id="kills_table"></div>
